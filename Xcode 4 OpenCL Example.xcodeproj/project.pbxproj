@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		657E9B6E16FEB155004EE54A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657E9B6D16FEB155004EE54A /* Cocoa.framework */; };
+		657E9B7816FEB155004EE54A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 657E9B7616FEB155004EE54A /* InfoPlist.strings */; };
+		657E9B7A16FEB155004EE54A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E9B7916FEB155004EE54A /* main.m */; };
+		657E9B7E16FEB155004EE54A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 657E9B7C16FEB155004EE54A /* Credits.rtf */; };
+		657E9B8116FEB155004EE54A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E9B8016FEB155004EE54A /* AppDelegate.m */; };
+		657E9B8416FEB155004EE54A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657E9B8216FEB155004EE54A /* MainMenu.xib */; };
+		657E9B8B16FEB15D004EE54A /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657E9B8A16FEB15D004EE54A /* OpenCL.framework */; };
+		657E9B8D16FEB19B004EE54A /* square_kernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 657E9B8C16FEB19B004EE54A /* square_kernel.cl */; };
+		6590542E16FEE0E5008AD899 /* sum_columns_kernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 6590542D16FEE0E5008AD899 /* sum_columns_kernel.cl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		657E9B6A16FEB155004EE54A /* Xcode 4 OpenCL Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode 4 OpenCL Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		657E9B6D16FEB155004EE54A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		657E9B7016FEB155004EE54A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		657E9B7116FEB155004EE54A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		657E9B7216FEB155004EE54A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		657E9B7516FEB155004EE54A /* Xcode 4 OpenCL Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xcode 4 OpenCL Example-Info.plist"; sourceTree = "<group>"; };
+		657E9B7716FEB155004EE54A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		657E9B7916FEB155004EE54A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		657E9B7B16FEB155004EE54A /* Xcode 4 OpenCL Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xcode 4 OpenCL Example-Prefix.pch"; sourceTree = "<group>"; };
+		657E9B7D16FEB155004EE54A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		657E9B7F16FEB155004EE54A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		657E9B8016FEB155004EE54A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		657E9B8316FEB155004EE54A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		657E9B8A16FEB15D004EE54A /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		657E9B8C16FEB19B004EE54A /* square_kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = square_kernel.cl; sourceTree = "<group>"; };
+		6590542D16FEE0E5008AD899 /* sum_columns_kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = sum_columns_kernel.cl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		657E9B6716FEB155004EE54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657E9B8B16FEB15D004EE54A /* OpenCL.framework in Frameworks */,
+				657E9B6E16FEB155004EE54A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		657E9B6116FEB155004EE54A = {
+			isa = PBXGroup;
+			children = (
+				657E9B7316FEB155004EE54A /* Xcode 4 OpenCL Example */,
+				657E9B6C16FEB155004EE54A /* Frameworks */,
+				657E9B6B16FEB155004EE54A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		657E9B6B16FEB155004EE54A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				657E9B6A16FEB155004EE54A /* Xcode 4 OpenCL Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		657E9B6C16FEB155004EE54A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				657E9B8A16FEB15D004EE54A /* OpenCL.framework */,
+				657E9B6D16FEB155004EE54A /* Cocoa.framework */,
+				657E9B6F16FEB155004EE54A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		657E9B6F16FEB155004EE54A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				657E9B7016FEB155004EE54A /* AppKit.framework */,
+				657E9B7116FEB155004EE54A /* CoreData.framework */,
+				657E9B7216FEB155004EE54A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		657E9B7316FEB155004EE54A /* Xcode 4 OpenCL Example */ = {
+			isa = PBXGroup;
+			children = (
+				657E9B7F16FEB155004EE54A /* AppDelegate.h */,
+				657E9B8016FEB155004EE54A /* AppDelegate.m */,
+				657E9B8216FEB155004EE54A /* MainMenu.xib */,
+				657E9B7416FEB155004EE54A /* Supporting Files */,
+			);
+			path = "Xcode 4 OpenCL Example";
+			sourceTree = "<group>";
+		};
+		657E9B7416FEB155004EE54A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				657E9B7516FEB155004EE54A /* Xcode 4 OpenCL Example-Info.plist */,
+				657E9B7616FEB155004EE54A /* InfoPlist.strings */,
+				657E9B7916FEB155004EE54A /* main.m */,
+				6590542D16FEE0E5008AD899 /* sum_columns_kernel.cl */,
+				657E9B8C16FEB19B004EE54A /* square_kernel.cl */,
+				657E9B7B16FEB155004EE54A /* Xcode 4 OpenCL Example-Prefix.pch */,
+				657E9B7C16FEB155004EE54A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		657E9B6916FEB155004EE54A /* Xcode 4 OpenCL Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657E9B8716FEB155004EE54A /* Build configuration list for PBXNativeTarget "Xcode 4 OpenCL Example" */;
+			buildPhases = (
+				657E9B6616FEB155004EE54A /* Sources */,
+				657E9B6716FEB155004EE54A /* Frameworks */,
+				657E9B6816FEB155004EE54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Xcode 4 OpenCL Example";
+			productName = "Xcode 4 OpenCL Example";
+			productReference = 657E9B6A16FEB155004EE54A /* Xcode 4 OpenCL Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		657E9B6216FEB155004EE54A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = d;
+			};
+			buildConfigurationList = 657E9B6516FEB155004EE54A /* Build configuration list for PBXProject "Xcode 4 OpenCL Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 657E9B6116FEB155004EE54A;
+			productRefGroup = 657E9B6B16FEB155004EE54A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				657E9B6916FEB155004EE54A /* Xcode 4 OpenCL Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		657E9B6816FEB155004EE54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657E9B7816FEB155004EE54A /* InfoPlist.strings in Resources */,
+				657E9B7E16FEB155004EE54A /* Credits.rtf in Resources */,
+				657E9B8416FEB155004EE54A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		657E9B6616FEB155004EE54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657E9B7A16FEB155004EE54A /* main.m in Sources */,
+				657E9B8116FEB155004EE54A /* AppDelegate.m in Sources */,
+				657E9B8D16FEB19B004EE54A /* square_kernel.cl in Sources */,
+				6590542E16FEE0E5008AD899 /* sum_columns_kernel.cl in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		657E9B7616FEB155004EE54A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657E9B7716FEB155004EE54A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		657E9B7C16FEB155004EE54A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657E9B7D16FEB155004EE54A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		657E9B8216FEB155004EE54A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657E9B8316FEB155004EE54A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		657E9B8516FEB155004EE54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		657E9B8616FEB155004EE54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		657E9B8816FEB155004EE54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xcode 4 OpenCL Example/Xcode 4 OpenCL Example-Prefix.pch";
+				INFOPLIST_FILE = "Xcode 4 OpenCL Example/Xcode 4 OpenCL Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		657E9B8916FEB155004EE54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xcode 4 OpenCL Example/Xcode 4 OpenCL Example-Prefix.pch";
+				INFOPLIST_FILE = "Xcode 4 OpenCL Example/Xcode 4 OpenCL Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		657E9B6516FEB155004EE54A /* Build configuration list for PBXProject "Xcode 4 OpenCL Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657E9B8516FEB155004EE54A /* Debug */,
+				657E9B8616FEB155004EE54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657E9B8716FEB155004EE54A /* Build configuration list for PBXNativeTarget "Xcode 4 OpenCL Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657E9B8816FEB155004EE54A /* Debug */,
+				657E9B8916FEB155004EE54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 657E9B6216FEB155004EE54A /* Project object */;
+}
