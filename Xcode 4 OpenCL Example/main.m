@@ -287,17 +287,12 @@ int main (int argc, const char * argv[]) {
         // expected OpenCL types.  Remember -- if you use 'float' in your
         // kernel, that's a 'cl_float' from the application's perspective.   [8]
         int dims = NUM_VALUES;
-        //clock_t START = clock();
-        //printf("Stating timer...\n");
         int i = 0;
-        while (i < 1000) {
+        while (i < 1) { // <---- CHANGE THE COUNTER TO INCREASE SAMPLE SIZE
             sum_columns_kernel(&range,(cl_float*)mem_in, (cl_float*)mem_out, (cl_int)dims, (cl_int)dims);
             i++;
         }
-//        printf("Ending timer...\n");
-//        clock_t END = clock();
-//        double T_ELAPSED = (double)(END - START) / CLOCKS_PER_SEC;
-//        printf("OpenCL timer: %gs\n\n", T_ELAPSED);
+
         
         // Getting data out of the device's memory space is also easy; we
         // use gcl_memcpy.  In this case, we take the output computed by the
